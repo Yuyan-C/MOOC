@@ -1,0 +1,436 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    width: 100%;
+    font-family: "微软雅黑";
+}
+
+ul{
+    list-style:none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+input{
+    border: none;
+    outline: none;
+}
+
+.clear{
+    clear:both;
+}
+
+.wrapperBox{
+    width:100%;
+}
+
+.navBox{
+    width: 100%;
+    height:40px;
+    background-color:#00848A;
+}
+
+.navBar{
+    width: 1400px;
+    min-width: 1400;
+    margin: 0 auto;
+
+}
+
+.navBar .logo{
+    float:left;
+}
+
+.logo img{
+    margin-top: 5px;
+}
+
+.navBar nav{
+    float:right;
+}
+
+.navBar nav ul li{
+    float:left;
+}
+
+.navBar nav ul li a{
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    color:#ffffff;
+    padding: 0 10px;
+}
+
+.navBar nav ul li a:hover{
+    background-color: #ffffff;
+    color:#00848A;
+}
+
+.bannerBox{
+    width: 100%;
+    height: 640px;
+    overflow: hidden;
+    position: relative;
+}
+
+.bannerBox ul li .img{
+    width: 100%;
+    height: 640px;
+    display: none;
+}
+
+.bannerBox ul li .current{
+    display: block;
+}
+
+.bannerBox .dots{
+    position: absolute;
+    bottom: 50px;
+    width: 100px;
+    left: 50%;
+    margin-left: -50px;
+}
+
+.bannerBox .dots>span{
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    background-color: white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.bannerBox dots>span:not(:last-child){
+    margin-right: 5px;
+}
+
+.bannerBox .dots>span.square{
+    background: #00848A;
+}
+
+
+/* 
+搜索框 */
+.searchBox{
+    width: 975px;
+    height: 68px;
+    margin: 0 auto;
+    background: #fff;
+    position: relative;
+    margin-top: -30px;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 0 #ccc;
+}
+
+
+.searchBox form input{
+    width: 907px;
+    height: 68px;
+    float: left;
+    text-indent: 20px;
+    border-radius: 5px;
+}
+
+
+.searchBox form input[type="submit"]{
+    display: inline-block;
+    width:68px;
+    height:68px;
+    background: url(../img/icon/searchicon.png) no-repeat center;
+    animation: bounce 1s infinite alternate;
+}
+
+
+/* bounce */
+@keyframes bounce{
+    0%{
+        transform: translate3d(0,0,0);
+    }
+
+    100%{
+        transform: translate3d(0,-8px,0);
+    }
+
+}
+
+/* 特惠房源 */
+
+.oddsBox{
+    width: 1400px;
+    margin: 30px auto 60px auto;
+}
+
+/* 标题 */
+.title{
+    height: 40px;
+}
+.oddsBox .title p, .wantgoBox .title p, .ensureBox .title p{
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #00848A;
+    color: #fff;
+    font-size: 22px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+
+.oddsBox .title span, .wantgoBox .title span,.ensureBox .title span{
+    font-size: 22px;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    color: #00848A;
+}
+
+.oddsBox .title span i{
+    display: inline-block;
+    font-style: normal;
+    padding: 0 5px;
+    animation: bounce 0.6s infinite alternate;
+}
+
+.content{
+    clear:left;
+    height: 700px;
+    padding-top: 40px;
+
+}
+
+.content .list .list_nav{
+    display: inline-block;
+    width: 100px;
+    height: 46px;
+    line-height: 40px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 4px 0 #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-right: 80px;
+    cursor: pointer;
+}
+
+.content .list .list_nav:last-child{
+    margin-right: 0;
+
+}
+
+
+.content .list .current_option{
+    background: #00848A;
+    color: #fff;
+}
+
+
+/* 城市对应的房源信息 */
+.productBox{
+    width:100%;
+    margin:20px 0;
+    clear:both;
+    display: none;
+ 
+    
+}
+
+.on{
+
+    display: block;
+}
+
+
+
+.infoBox{
+    width: 340px;
+    float: left;
+    margin:20px 13px 0 0;
+   
+}
+
+.infoBox:nth-child(4){
+    margin-right: 0;
+}
+
+.infoBox p:first-child{
+    width:334px;
+    height:222px;
+    border:1px solid #fff;
+    overflow:hidden;
+    border-radius: 10px;
+}
+
+.infoBox p:first-child img{ 
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: transform 0.6s;
+}
+
+
+
+.infoBox p:first-child img:hover{
+    transform: scale(1.2);
+    -ms-transform:scale(1.2) ;
+    -webkit-transform: scale(1.2);
+    
+}
+
+.title{
+    font-size:16px;
+    margin:10px 0;
+}
+
+.infoBox span{
+    font-size: 12px;
+}
+
+.infoBox p s{
+    margin:0 5px;
+}
+
+.infoBox ul{
+    margin:10px 0;
+}
+
+.infoBox ul li{
+    float: left;
+}
+
+/* 你可能也想去 */
+
+.wantgoBox{
+    width: 1400px;
+    height: 303px;
+    margin: 20px auto 20px auto ;
+    clear: both;
+}
+
+
+.wantgoBox ul{
+    clear: both;
+    margin-top: 20px;
+}
+
+.wantgoBox ul li{
+    width: 193px;
+    height: 241px;
+    float: left;
+    margin-right: 48px;
+    position: relative;
+}
+
+.wantgoBox ul li:last-child{
+    margin-right: 0px;
+}
+
+
+.wantgoBox ul li img{
+    width: 193px;
+    height: 241px;
+}
+
+.wantgoBox ul li p{
+    position: absolute;
+    top:144px;
+    left: 60%;
+    margin-left: -59px;
+    z-index: 10;
+}
+
+
+.wantgoBox ul li span{
+    display: block;
+    color: #fff;
+    text-align: center;
+}
+
+
+.wantgoBox ul li .mark{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    position:absolute;
+    left: 0s;
+    top:0;
+    border-radius: 10px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity ease-in-out 0.5s;
+}
+
+
+.wantgoBox ul li:hover .mark{
+    opacity: 1;
+
+}
+
+
+.ensureBox{
+    width: 1400px;
+    height: 200px;
+    margin: 40px auto;
+}
+
+.ensureList dl{
+    float: left;
+    width: 450px;
+    margin-top: 20px;
+    margin-right: 25px;
+}
+
+.ensureList dl:last-child{
+    margin-right: 0;
+}
+
+.ensureList dl dt, .ensureList dl dd{
+    float: left;
+}
+
+.ensureList dl dt{
+    margin-right: 15px;
+}
+
+.ensureList dt img{
+    animation: bounce 0.75s infinite alternate;
+
+}
+
+.ensureList dl dd{
+    font-size: 18px;
+    line-height: 1.6;
+    width: 300px;
+}
+
+.listlinkBox{
+    width: 1400px;
+    height: 280px;
+    margin: 30px auto 50px auto;
+}
+
+.listlinkBox dl{
+    float: left;
+    width: 350px;
+    line-height: 1.6;
+}
+
+
+.listlinkBox dl dt{
+    margin: 0 0 20px 0;
+    color: #00848A;
+
+}
+
+
+.copyBox{
+    text-align: center;
+}
